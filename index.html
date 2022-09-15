@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 放行程表(table) 快速報名(form) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS5</title>
+
+    <!-- font css -->
+    <link rel="stylesheet" href="css/font.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/e993fcb4ac.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarTop" data-bs-offset="0" tabindex="0" class="bg-white ">
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 sticky-top">
+        <nav id="navbarTop" class="navbar navbar-expand-md navbar-light bg-light px-5 py-1">
+            <a class="navbar-brand px-md-3" href="#">
+                <img src="./img/ntuocs_logo.png" class="img float-start" alt="ntuocs">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="nav collapse navbar-collapse px-5 justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav bg-light fw-bolder fs-5">
+                    <a class="nav-link px-md-3" href="#home">首頁</a>
+                    <a class="nav-link px-md-3" href="#race">賽事資訊</a>
+                    <a class="nav-link px-md-3" href="#about">關於我們</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-md-3" href="#" id="navbarDropdownMenuLink1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            深度導覽
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink1">
+                            <a class="dropdown-item" href="#natural">自然景觀</a>
+                            <a class="dropdown-item" href="#religion">宗教人文</a>
+                            <a class="dropdown-item" href="#history">歷史遺跡</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Home Start -->
+    <section id="home" class="container-fluid p-0">
+        <!-- Carousel Start -->
+        <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-lg-center">
+                        <h6 class="text-white mb-2 mb-md-3 fs-md-2 ">2022</h6>
+                        <h5 class="display-5 mb-2 mb-md-4 text-white font-weight-bold">七美晨光路跑</h5>
+                        <a href="#" class="btn btn-lg btn-outline-light mb-md-5">前往報名</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-lg-center">
+                        <h6 class="text-white mb-2 mb-md-3 fs-md-2 ">2022</h6>
+                        <h5 class="display-5 mb-2 mb-md-4 text-white font-weight-bold">七美晨光路跑</h5>
+                        <a href="#" class="btn btn-lg btn-outline-light mb-md-5">前往報名</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-lg-center">
+                        <h6 class="text-white mb-2 mb-md-3 fs-md-2 ">2022</h6>
+                        <h5 class="display-5 mb-2 mb-md-4 text-white font-weight-bold">七美晨光路跑</h5>
+                        <a href="#" class="btn btn-lg btn-outline-light mb-md-5">前往報名</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-4.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-lg-center">
+                        <h6 class="text-white mb-2 mb-md-3 fs-md-2 ">2022</h6>
+                        <h5 class="display-5 mb-2 mb-md-4 text-white font-weight-bold">七美晨光路跑</h5>
+                        <a href="#" class="btn btn-lg btn-outline-light mb-md-5">前往報名</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Carousel End -->
+    </section>
+    <!-- Home End -->
+
+
+    <!-- Information Start -->
+    <section id="race" class="container mt-5 mb-5 p-0 py-md-5">
+        <div id="race-information" class="row mb-5 px-5">
+            <ul class="list-group">
+                <li class="list-group-item">報名時間：4/1～4/30</li>
+                <li class="list-group-item">​活動地點：澎湖縣七美鄉</li>
+                <li class="list-group-item">活動時間：2022年7月23日早上-7月24日下午</li>
+            </ul>
+        </div>
+        <div id="race-schedules" class="row mb-5 px-5">
+            <div class="table-responsive">
+                <table id="table1" class="table table-striped table-hover mb-5">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 30%">時間</th>
+                            <th scope="col">7/23(六)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">10:10</td>
+                            <td class="fw-bold">馬公南海遊客中心集合</td>
+                        </tr>
+                        <tr>
+                            <td>10:30-12:00</td>
+                            <td>搭船前往七美</td>
+                        </tr>
+                        <tr>
+                            <td>13:00-17:30</td>
+                            <td>景點導覽＋自由活動</td>
+                        </tr>
+                        <tr>
+                            <td>17:30-20:00</td>
+                            <td>選手之夜狂歡九孔大派對</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <table id="table2" class="table table-striped table-hover mb-5">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 30%">時間</th>
+                            <th scope="col">7/24(日)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4:30-4:45</td>
+                            <td>半馬組報到與物品寄放</td>
+                        </tr>
+                        <tr>
+                            <td>4:45-5:00</td>
+                            <td>開幕典禮+暖身操</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">5:00</td>
+                            <td class="fw-bold">起跑:半馬組(限3小時)</td>
+                        </tr>
+                        <tr>
+                            <td>5:30-5:50</td>
+                            <td>好young組選手報到與物品寄放</td>
+                        </tr>
+                        <tr>
+                            <td>5:50-6:00</td>
+                            <td>開幕典禮+暖身操</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">6:00</td>
+                            <td class="fw-bold">起跑: 好young組(限100分鐘)</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">7:00、7:40</td>
+                            <td class="fw-bold">好young組接駁回主場地(２趟車)</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">8:00 </td>
+                            <td class="fw-bold">半馬組結束</td>
+                        </tr>
+                        <tr>
+                            <td>8:00-8:10</td>
+                            <td>大會收操</td>
+                        </tr>
+                        <tr>
+                            <td>8:10-8:30</td>
+                            <td>頒獎典禮與抽獎</td>
+                        </tr>
+                        <tr>
+                            <td>8:30-8:40</td>
+                            <td>閉幕典禮</td>
+                        </tr>
+                        <tr>
+                            <td>8:40-13:30</td>
+                            <td>自由活動</td>
+                        </tr>
+                        <tr>
+                            <td>13:20</td>
+                            <td>集合上船</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="race-types" class="row mb-5 px-1">
+            <div class="col-md-6 p-0">
+                <div
+                    class="d-flex flex-column align-items-end justify-content-center bg-happyFisher text-right text-dark me-md-1 p-5">
+                    <h3 class="display-4 mb-3 font-weight-bold text-nowrap"><i
+                            class="fa-solid fa-person-walking fs-1 pe-5"></i>好漾組
+                    </h3>
+                    <p>
+                        Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam sit dolores,
+                        dolor
+                        sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit sadipscing at..
+                    </p>
+                    <a href="" class="btn btn-lg btn-outline-light mt-4 px-4">前往報名</a>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <div
+                    class="d-flex flex-column align-items-start justify-content-center bg-shadyWater text-left text-dark ms-md-1 p-5">
+                    <h3 class="display-4 mb-3 font-weight-bold text-nowrap">半馬組<i
+                            class="fa-solid fa-person-running fs-1 ps-5"></i>
+                    </h3>
+                    <p>
+                        Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam sit dolores,
+                        dolor
+                        sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit sadipscing at..
+                    </p>
+                    <a href="" class="btn btn-lg btn-outline-light mt-4 px-4">前往報名</a>
+                </div>
+            </div>
+        </div>
+        <div id="race-plan" class="row mb-5 px-3 px-md-0">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <div class="card border-4 h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title pb-2">一人獨享</h5>
+                            <h6 class="card-subtitle mb-2 fw-bold">價格 2600元</h6>
+                            <p class="card-text lh-lg">
+                                馬公-七美 來回船票<br>
+                                紀念衫、紀念毛巾、提袋<br>
+                                完賽證明<br>
+                                七美景點深度導覽<br>
+                                海鮮烤肉大餐<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <div class="card border-4 h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title pb-2">雙人成行</h5>
+                            <h6 class="card-subtitle mb-2 fw-bold">價格 5000元</h6>
+                            <p class="card-text lh-lg">
+                                馬公-七美 來回船票<br>
+                                紀念衫、紀念毛巾、提袋<br>
+                                完賽證明<br>
+                                七美景點深度導覽<br>
+                                海鮮烤肉大餐<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <div class="card border-4 h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title pb-2">四人團報</h5>
+                            <h6 class="card-subtitle mb-2 fw-bold">價格 9600元</h6>
+                            <p class="card-text lh-lg">
+                                馬公-七美 來回船票<br>
+                                紀念衫、紀念毛巾、提袋<br>
+                                完賽證明<br>
+                                七美景點深度導覽<br>
+                                海鮮烤肉大餐<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <div class="card border-4 h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title pb-2">鄉親方案</h5>
+                            <h6 class="card-subtitle mb-2 fw-bold">價格 200元</h6>
+                            <p class="card-text lh-lg">
+                                紀念衫、紀念毛巾、提袋<br>
+                                完賽證明<br>
+                                七美景點深度導覽
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="race-registration" class="row mb-5">
+            <div class="px-5 pt-5">
+                <h4 class="display-4 mb-4">報名表單</h4>
+                <form class="row g-3 needs-validation">
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" id="inputName" required>
+                        <label for="inputName" class="form-label">姓名</label>
+                        <div class="invalid-feedback">
+                            請填寫名字
+                        </div>
+                    </div>
+                    <div class="col-md-6  form-floating">
+                        <input type="tel" class="form-control" id="inputPhone" maxlength="10" required>
+                        <label for="inputPhone" class="form-label">手機號碼</label>
+                        <div class="invalid-feedback">
+                            請填寫手機號碼
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputPostal" class="form-label">郵遞區號</label>
+                        <input type="text" class="form-control" id="inputPostal" placeholder="123-45">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="inputAddress" class="form-label">居住地址</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="臺北市中正區八德路一段12巷3弄45號">
+                    </div>
+                    <div class="col-md-6 py-3">
+                        <span class="pe-5 pe-md-3">性別</span>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioGender" id="flexRadioGender1"
+                                checked>
+                            <label class="form-check-label" for="flexRadioGender1">
+                                男性
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioGender" id="flexRadioGender2">
+                            <label class="form-check-label" for="flexRadioGender2">
+                                女性
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 py-3">
+                        <span class="pe-3">飲食習慣</span>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDiet" id="flexRadioDiet1"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDiet1">
+                                葷食
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDiet" id="flexRadioDiet2">
+                            <label class="form-check-label" for="flexRadioDiet2">
+                                素食
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputGroup" class="form-label">參賽組別</label>
+                        <select id="inputGroup" class="form-select">
+                            <option selected>請選擇組別</option>
+                            <option>好漾組</option>
+                            <option>半馬組</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPlan" class="form-label">報名方案</label>
+                        <select id="inputPlan" class="form-select">
+                            <option selected>請選擇方案</option>
+                            <option>一人獨享--2600元</option>
+                            <option>雙人成行--5000元</option>
+                            <option>四人團報--9600元</option>
+                            <option>鄉親方案--200元</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dataCheck" required>
+                            <label class="form-check-label" for="dataCheck">
+                                確認資料填寫無誤
+                            </label>
+                            <div class="invalid-feedback">
+                                請確認資料填寫無誤
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">提交報名表單</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Information End -->
+
+    <!-- About Start -->
+    <section id="about" class="container mb-5 py-md-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 p-0">
+                <img class="img-fluid rounded-3 mb-4 mb-lg-0" src="img/about1.jpg" alt="Image">
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <h2 class="display-4 font-weight-bold mb-4 fw-bold">關於我們</h2>
+                <p class="mb-lg-5">Labore vero lorem eos sed aliquy ipsum aliquy sed. Vero dolore dolore takima
+                    ipsum
+                    lorem rebum
+                </p>
+                <div class="row py-2">
+                    <div class="col-sm-6">
+                        <i class="fa-solid fa-people-group display-5 text-primary"></i>
+                        <h4 class="font-weight-bold mt-3 fw-bold">地方創生</h4>
+                        <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa-solid fa-pen-ruler display-5 text-primary"></i>
+                        <h4 class="font-weight-bold mt-3 fw-bold">社區營造</h4>
+                        <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-lg px-4 btn-outline-primary">了解更多</a>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+
+    <!-- Tourist Start -->
+    <section id="tourist" class="container mb-5 p-0">
+
+
+        <!-- Natural Start -->
+        <div id="natural" class="container mb-5 py-md-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card mt-md-2 mb-3 mb-lg-0 pt-md-5 border-0">
+                        <img src="img/natural1.jpg" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">小台灣</h5>
+                            <p class="card-text">Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut
+                                diam sit dolores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row mb-5 ms-md-3">
+                        <h5 class="display-6 mb-3 fw-bold">自然景觀</h2>
+                            <p class="mb-3">Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam
+                                sit
+                                dolores, dolor sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit
+                                sadipscing at..<br>
+                            </p>
+                            <div class="col-sm-3 ">
+                                <a href="#" class="btn btn-sm px-4 btn-outline-primary">
+                                    了解更多
+                                </a>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mt-md-2 mb-3 mb-lg-0 border-0">
+                                <img src="img/natural2.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">大獅龍埕</h5>
+                                    <p class="card-text">Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor
+                                        ipsum ut diam sit dolores.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mt-md-2 mb-3 mb-lg-0 border-0">
+                                <img src="img/natural3.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">潮間帶</h5>
+                                    <p class="card-text">Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor
+                                        ipsum ut diam sit dolores.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mt-md-2 mb-3 mb-lg-0 border-0">
+                                <img src="img/natural4.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">石瀑</h5>
+                                    <p class="card-text">Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor
+                                        ipsum ut diam sit dolores.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Natural End -->
+
+
+        <!-- Religion Start -->
+        <div id="religion" class="container mb-5 py-md-5">
+            <div class="row mb-5">
+                <div class="card mb-3 border-0">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title display-4 mb-3 mb-md-5 fw-bold">宗教文化</h5>
+                                <p class="card-text">Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum
+                                    ut diam sit dolores, dolor sit eos sea sanctus erat lorem nonumy sanctus takimata.
+                                    Kasd amet sit sadipscing at..</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <img src="img/religion1.jpg" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">吳府宮</h5>
+                    <p>Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum
+                        ut diam sit dolores, dolor sit eos sea sanctus erat lorem nonumy sanctus takimata.
+                        Kasd amet sit sadipscing at..</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">玉蓮寺</h5>
+                    <p>Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum
+                        ut diam sit dolores, dolor sit eos sea sanctus erat lorem nonumy sanctus takimata.
+                        Kasd amet sit sadipscing at..</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">七美教會</h5>
+                    <p>Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum
+                        ut diam sit dolores, dolor sit eos sea sanctus erat lorem nonumy sanctus takimata.
+                        Kasd amet sit sadipscing at..</p>
+                </div>
+            </div>
+        </div>
+        <!-- Religion End -->
+
+
+        <!-- History Start -->
+        <div id="history" class="container mb-5 py-md-5">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <img class="img-fluid mt-md-5 mb-4 pt-md-4" src="img/history1.jpg" alt="Image">
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <h5 class="display-4 mb-3 mb-md-5 fw-bold">歷史遺跡</h5>
+                        <p class="mb-5">Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum
+                            ut diam sit dolores, dolor sit eos sea sanctus erat lorem nonumy sanctus takimata.
+                            Kasd amet sit sadipscing at..</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7"><img class="img-fluid mb-4 mb-lg-0" src="img/history2.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- History End -->
+
+
+    </section>
+    <!-- Tourist End -->
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid py-5 text-dark">
+        <div class="container border-top border-dark pt-3">
+            <p class="m-0 text-center">
+                &copy; Run Chimei. All Rights Reserved. Designed by Chen-Hsien Chen
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Javascript files-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
